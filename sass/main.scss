@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/price-grid";
+@import "components/button";
+
+@media (max-width: 23.4em) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    padding: 3rem 0;
+  }
+
+  .padding-sm {
+    padding: 2rem;
+  }
+
+  .heading-primary {
+    letter-spacing: -0.1rem;
+  }
+
+  .heading-secondary {
+    font-size: $font-size;
+    margin-bottom: 1rem;
+  }
+
+  .price-grid {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+
+    &__subscription {
+      border-bottom-left-radius: 0;
+    }
+
+    &__why-us {
+      border-bottom-right-radius: 0.9rem;
+      border-bottom-left-radius: 0.9rem;
+    }
+  }
+
+  .btn {
+    padding: 1.5rem 7.5rem;
+  }
+}

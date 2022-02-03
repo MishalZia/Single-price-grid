@@ -1,0 +1,14 @@
+.btn {
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 1.5rem 9rem;
+  margin-top: 1.5rem;
+  border-radius: 0.6rem;
+
+  &:link,
+  &:visited {
+    background-color: $color-secondary-yellow;
+    color: $color-white;
+    box-shadow: 0 1.2rem 1.2rem $color-shadow;
+  }
+}
